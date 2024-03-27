@@ -7,7 +7,7 @@
 
 <!--STYLES	-->
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap-minify.css" media="screen">
-	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="stylesheet" href="./assets/style-minify.css" media="screen">
 
 <!--	FONTS-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,16 +15,16 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 
 <!--SCRIPTS	-->
-	<script async src="./assets/bootstrap/compressed-bootstrap.bundle.js"></script>
+	<script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 	<script async src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script async src="./assets/compressed-maugallery.js"></script>
-	<script async src="./assets/scripts.js"></script>
+	<script defer src="./assets/compressed-maugallery.js"></script>
+	<script defer src="./assets/scripts.js"></script>
 
 <!--	META DESCRIPTION -->
 	<meta name="description" content="Nina Carducci, photographe à Bordeaux pour vos évènements, entreprises, mariages, concert et portraits.">
 	<script type="application/ld+json">
 		{
-			"@context": "http://schema.org",
+			"@context": "https://schema.org",
 			"@type": "LocalBusiness",
 			"name": "Nina Carducci Photographe",
 			"address": {
@@ -75,13 +75,25 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="assets/images/slider/slider_street_salaryman.webp" loading="eager" class="d-block w-100" width="1920" height="888" style="max-width: 100%; height: auto; object-fit: cover "  alt="Homme en costume marchant dans la rue">
+				<img src="assets/images/slider/slider_street_salaryman.webp"
+					 srcset="assets/images/slider/slider_street_salaryman.webp 1920w,
+                 			 assets/images/slider/slider_street_salaryman_375.webp 375w"
+					 sizes="(max-width: 375px) 375px, 1920px"
+					 loading="eager" class="d-block w-100" width="1920" height="888" style="max-width: 100%; height: auto; object-fit: cover" alt="Homme en costume marchant dans la rue">
 			</div>
 			<div class="carousel-item">
-				<img src="assets/images/slider/slider_live_show_public.webp" loading="lazy" class="d-block w-100" width="1920" height="888" style="max-width: 100%; height: auto; object-fit: cover"  alt="Public d'un concert">
+				<img src="assets/images/slider/slider_live_show_public.webp"
+					 srcset="assets/images/slider/slider_live_show_public.webp 1920w,
+				 			 assets/images/slider/slider_live_show_public_375.webp 375w"
+					 sizes="(max-width: 375px) 375px, 1920px"
+					 loading="lazy" class="d-block w-100" width="1920" height="888" style="max-width: 100%; height: auto; object-fit: cover"  alt="Public d'un concert">
 			</div>
 			<div class="carousel-item">
-				<img src="assets/images/slider/slider_wedding_couple_kissing.webp" loading="lazy" class="d-block w-100" width="1920" height="887" style="max-width: 100%; height: auto; object-fit: cover"  alt="Couple marié s'embrassant">
+				<img src="assets/images/slider/slider_wedding_couple_kissing.webp"
+					 srcset="assets/images/slider/slider_wedding_couple_kissing.webp 1920w,
+							 assets/images/slider/slider_wedding_couple_kissing_375.webp 375w"
+					 sizes="(max-width: 375px) 375px, 1920px"
+					 loading="lazy" class="d-block w-100" width="1920" height="887" style="max-width: 100%; height: auto; object-fit: cover"  alt="Couple marié s'embrassant">
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
