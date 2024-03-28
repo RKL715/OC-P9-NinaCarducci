@@ -6,13 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!--STYLES	-->
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap-minify.css" media="screen">
-	<link rel="stylesheet" href="./assets/style-minify.css" media="screen">
 
-<!--	FONTS-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
+
+	<!--	FONTS-->
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+	</style>
 
 <!--SCRIPTS	-->
 	<script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
@@ -75,7 +74,8 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="assets/images/slider/slider_street_salaryman.webp"
+				<img fetchpriority="high" rel="preload" is="image"
+					 src="assets/images/slider/slider_street_salaryman.webp"
 					 srcset="assets/images/slider/slider_street_salaryman.webp 1920w,
                  			 assets/images/slider/slider_street_salaryman_375.webp 375w"
 					 sizes="(max-width: 375px) 375px, 1920px"
@@ -112,7 +112,7 @@
 	</div>
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
-		<h3 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h3>
+		<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
 		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</div>
@@ -204,4 +204,8 @@
 </article>
 </main>
 </body>
+
+<!--CSS & SCRIPTS-->
+<link rel="stylesheet" href="./assets/bootstrap/bootstrap-minify.css" media="screen">
+<link rel="stylesheet" href="./assets/style-minify.css" media="screen">
 </html>
